@@ -104,8 +104,18 @@ nav a{
 .pic{
     width: 300px;
     height: 400px;
-    background-color: blueviolet;
+    
     margin-top: 60px;
     border-radius: 40%;
     box-shadow: 3px 3px 20px 15px green;
+    overflow: hidden;
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+
+    
 }
