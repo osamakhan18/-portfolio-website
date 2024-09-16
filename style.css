@@ -6,6 +6,9 @@
 body{
    
     background-color: aquamarine;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('./images/pic-02.jpg');
+    background-size: cover;
 }
 
 .main{
