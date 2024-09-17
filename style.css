@@ -119,3 +119,20 @@ nav a{
 
     
 }
+
+#services{
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+    
+}
+
+.service-heading{
+    width: 500px;
+    height: 300px;
+    background-color: aquamarine;
+    align-items: center;
+    /* list-style-type: none; */
+    padding-left: 40px;
+}
+
