@@ -75,7 +75,7 @@ nav a{
 .hero{
     width: 80vw;
     height:70vh ;
-    /* background-color: antiquewhite; */
+   
     display: flex;
     justify-content: space-around;
     margin-left: 70px;
@@ -86,7 +86,7 @@ nav a{
     width: 500px;
     height: 400px;
     font-weight:800;
-    /* background-color: aquamarine; */
+  
     font-size: 50px;
     display: flex;
     flex-direction: column;
@@ -112,7 +112,6 @@ nav a{
 .pic{
     width: 300px;
     height: 400px;
-    
     margin-top: 60px;
     border-radius: 40%;
     box-shadow: 3px 3px 20px 15px green;
@@ -131,10 +130,12 @@ nav a{
 #services{
     width: 100%;
     height: 100vh;
-    background-color: antiquewhite;
-    margin-top: 100px;
+    background-color: rgb(3, 58, 3);
+    /* margin-top: 10px; */
     align-items: center;
-   
+    /* background-image:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('./images/pic-02.jpg');
+    */
     
     
 }
@@ -144,16 +145,21 @@ nav a{
     padding-left: 100px;
     font-weight:bold;
     font-size: 60px;
+    /* color: rgb(5, 83, 5); */
+    color: antiquewhite;
 }
 
-
+/* #h1-last{
+    color: aliceblue;
+} */
 .service-heading p{
     padding-left: 60px;
+    color: rgb(250, 247, 243);
 }
 .service-heading{
     width: 500px;
     height: 250px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     align-items: center;  
     padding-left: 40px;
     margin: 0 auto;
@@ -164,24 +170,26 @@ nav a{
 .service-cards{
     width: 100%;
     height: 500px;
-    background-color: rgb(19, 136, 204);
+    /* background-color: rgb(19, 136, 204); */
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
+   
 }
 
 
 .service-small-card{
     width: 350px;
     height: 400px;
-    /* background-color: blue; */
-    margin-top: 30px;
+    
     border-radius: 30px;
     overflow: hidden;
     object-fit: cover;
     position: relative;
     background-image:  linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url('./images/service-card.jpg');
+    border: 3px solid black;
+    transition: 2s;
       
     
 
@@ -197,20 +205,25 @@ nav a{
     top: -10%;
 }
    
-    
+   
+.service-small-card:hover{
+    background: linear-gradient(90deg,#d40442,#f35500);
+    /* transform: translate(-20px); */
+    transform: scale(1.1);
+}
 
 
 
 
 .service-small-card p {
     position: absolute;
-    top: 50%; /* Position the text vertically */
+    top: 50%; 
    
     
-    color: antiquewhite; /* Text color for better contrast */
-    font-size: 20px; /* Adjust text size as needed */
+    color: rgb(250, 244, 236); 
+    font-size: 20px; 
     text-align: center;
-    z-index: 2; /* Ensure the text appears above the gradient and image */
+    z-index: 2; 
 }
 
 
