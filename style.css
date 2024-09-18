@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 
@@ -381,4 +382,63 @@ nav a{
     color: aliceblue;
     font-weight: 800;
     
+}
+
+
+.contact-main-outer{
+
+    width: 100%;
+    height: 700px;
+    /* background-color: #f35500; */
+    border: 1px solid red;
+
+}
+
+#contact-main {
+    width: 90%;
+    height: 600px;
+    background-color: aquamarine;
+    margin-left: 100px;
+    
+    border: 1px solid red;
+    
+   
+}
+
+#contact-main p{
+    width: 400px;
+    height: 50px;
+    background-color: blueviolet;
+    display: block;
+    margin: 0 auto;
+    font-size: 50px;
+    /* padding-top: 100px; */
+    margin-top: 150px !important;
+    color: white;
+    
+
+}
+
+
+
+.contact-main-box{
+    width: 1300px;
+    height: 300px;
+    background-color: #d40442;
+    /* margin-top: 100px; */
+    /* margin-right: 100px; */
+     margin-left:10px; 
+    /* margin-bottom: 30px; */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.contact-small-box{
+    width: 300px;
+    height: 200px;
+    background-color: #36da15;
+    margin-top:50px;
+    
+
 }
