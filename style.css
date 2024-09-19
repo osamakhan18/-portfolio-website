@@ -616,11 +616,18 @@ footer h2{
 
 
 
-@media  only screen and (max-width: 850px) {
+@media   (max-width:900px) {
 
+    .main-box{
+        width: 750px;
+        height: 680px;
+        border: 1px solid red;
+    }
     .main{
-        /* padding-right:30px; */
-        margin-right: 40px;
+        width: 650px;
+        height: 550px;
+        margin-right: 50px;
+        margin-bottom: 30px;
     }
 
     nav{
@@ -665,6 +672,7 @@ footer h2{
     .name{
         font-size: large;
         margin-top: 60px;
+        
        
     }
     .last-name{
@@ -673,9 +681,18 @@ footer h2{
     .pic{
         width: 200px;
         height: 250px;
-        margin-right: 50px;
+        margin-right: 100px;
         box-shadow: 5px 5px 30px rgb(2, 65, 2);
 
+    }
+
+    .hero{
+        width: 650px;
+        height: 500px;
+        display: flex;
+        justify-content: space-evenly;
+        /* border: 1px solid red; */
+        margin-right: 50px;
     }
     .hero button{
         width: 200px;
@@ -684,4 +701,27 @@ footer h2{
         font-size: 20px;
         padding-bottom: 40px;
     }
+
+    .service-heading{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 400px;
+        height: auto;
+    }
+
+    .service-cards{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .service-small-card{
+        width: 200px;
+        height: 250px;
+
+
+    }
+
+    
 }
