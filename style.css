@@ -42,7 +42,8 @@ nav{
     font-style: Sans-Serif ;
     text-decoration: none;
     color: antiquewhite;
-    
+    /* border: 1px solid red;
+     */
    
 }
 nav a{
@@ -55,18 +56,21 @@ nav a{
 .links{
     display: flex;
     justify-content: space-evenly;
-    width: 700px;
+    width: 900px;
     height: 80px;
     align-items: center;
-    padding-left: 90px;
+    padding-left: 50px;
     gap:40px;
     font-weight: 600;
+    /* border: 1px solid red; */
     
 }
 
 
 .name{
     font-weight: 1000;
+    width: 230px;
+    /* border: 1px solid rgb(10, 138, 38); */
 }
 
 .last-name{
@@ -129,6 +133,33 @@ nav a{
 
     
 }
+
+
+
+
+
+/* Hamburger menu style */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: antiquewhite;
+    border-radius: 2px;
+}
+
+
+
+
+
 
 #services{
     width: 100%;
@@ -315,7 +346,7 @@ nav a{
     display: flex;
     align-items: center;
     color: aliceblue;
-    border: 1px solid red;
+   
     
 }
 
@@ -323,7 +354,6 @@ nav a{
 .about-bottom-box{
     width: 300px;
     height: 350px;
-    /* background-color: #d40442; */
     margin-top: 200px ;
     margin-top: 30px;
     position: relative;
@@ -336,7 +366,7 @@ nav a{
 .about-pic{
     width: 300px;
     height: 350px;
-    /* background-color: #f35500; */
+    
     position: absolute;
     bottom: 30px;
     left: 30px;
@@ -437,7 +467,6 @@ nav a{
 .contact-main-box{
     width: 1300px;
     height: 300px;
-     /* margin-left:10px;  */
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
@@ -520,7 +549,6 @@ footer h2{
 .footer-conatct{
     width: 400px;
     height: 100px;
-    /* border: 1px solid red; */
     margin-left: 500px;
     margin-top: 100px;
    
@@ -539,7 +567,6 @@ footer h2{
 #lindin{
     width: 100px;
     height: 60px;
-    
     border-radius: 50%;
     overflow: hidden;
 }
@@ -567,7 +594,6 @@ footer h2{
 #twitter{
     width: 100px;
     height: 60px;
-    
     border-radius: 50%;
     overflow: hidden;
     
@@ -576,4 +602,86 @@ footer h2{
 #twitter img{
     width: 100%;
     height: 100%;
+}
+
+
+
+/* @media only  screen and (max-width:1000px){
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}  */
+
+
+
+
+@media  only screen and (max-width: 850px) {
+
+    .main{
+        /* padding-right:30px; */
+        margin-right: 40px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: auto;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        text-align: center;
+        background-color: rgb(3, 3, 3);
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        
+    }
+
+    .links a {
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: large;
+        color:white;
+        text-decoration: none;
+    }
+
+    .hamburger {
+        display: flex;
+       
+
+    }
+
+    .nav-active .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name{
+        font-size: large;
+        margin-top: 60px;
+       
+    }
+    .last-name{
+        font-size:x-large;
+    }
+    .pic{
+        width: 200px;
+        height: 250px;
+        margin-right: 50px;
+        box-shadow: 5px 5px 30px rgb(2, 65, 2);
+
+    }
+    .hero button{
+        width: 200px;
+        height: 50px;
+        border: 3px solid rgb(2, 53, 2);
+        font-size: 20px;
+        padding-bottom: 40px;
+    }
 }
