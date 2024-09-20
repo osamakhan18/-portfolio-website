@@ -8,8 +8,6 @@
 body{
     background: url(./images/pic-02.jpg);
     background-size: cover;
-    /* height: 100vh; */
-    /* width: 100vw; */
     width: 100%;
     align-items: center;
     
@@ -21,21 +19,17 @@ body{
     background-image:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('./images/pic-02.jpg');
     background-size: cover;
-    /* margin-top: 0px; */
-   /* position: relative; */
-   /* margin: 0 auto; */
+    
 
 }
 .main{
     width: 90%;
     height: 90vh;
     background-color: rgb(3, 3, 3);
-    /* margin-left: 70px; */
     border-radius: 30px;
     box-shadow: 10px 10px  20px 6px rgb(39, 36, 36);
     margin-top: 40px;
-    /* position: absolute; */
-    padding: 30px;
+    /* padding: 30px; */
     margin: 0 auto;
     
     
@@ -53,8 +47,7 @@ nav{
     font-style: Sans-Serif ;
     text-decoration: none;
     color: antiquewhite;
-    /* border: 1px solid red;
-     */
+   
    
 }
 nav a{
@@ -70,10 +63,9 @@ nav a{
     width: 900px;
     height: 80px;
     align-items: center;
-    /* padding-left: 50px; */
     gap:40px;
     font-weight: 600;
-    /* border: 1px solid red; */
+   
     
 }
 
@@ -81,7 +73,7 @@ nav a{
 .name{
     font-weight: 1000;
     width: 230px;
-    /* border: 1px solid rgb(10, 138, 38); */
+    
 }
 
 .last-name{
@@ -145,11 +137,13 @@ nav a{
     
 }
 
+nav{
+    position: relative;
+}
 
 
 
 
-/* Hamburger menu style */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -157,6 +151,9 @@ nav a{
     width: 30px;
     height: 30px;
     cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .hamburger span {
@@ -174,19 +171,19 @@ nav a{
 
 #services{
     width: 100%;
-    /* height: 1500px; */
+   
     height: auto;
     background-color: rgb(3, 58, 3);
     align-items: center;
-    /* border: 1px solid rgb(3, 58, 3); */
+  
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-bottom: 30px;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     
     
     
@@ -194,7 +191,7 @@ nav a{
 
 
 #h1-head{
-    /* padding-left: 100px; */
+   
     font-weight:bold;
     font-size: 60px;
     color: antiquewhite;
@@ -205,15 +202,13 @@ nav a{
 
 
 .service-heading p{
-    /* padding-left: 60px; */
+   
     color: rgb(250, 247, 243);
 }
 .service-heading{
     width: 500px;
     height: 250px;
-   
     align-items: center;  
-    /* padding-left: 40px; */
     margin: 0 auto;
     
 
@@ -225,7 +220,7 @@ nav a{
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
-    /* border: 1px solid red; */
+    
    
 }
 
@@ -254,7 +249,7 @@ nav a{
     position: absolute;
     width: 250px;
     height: 200px;
-    /* padding-right: 200px; */
+    
     right: 40%;
     top: 10%;
 }
@@ -281,38 +276,37 @@ nav a{
 
 
 #project-main{
-    width: 90%;
-    /* height: 1500px; */
+    width: 100%;
     height: auto;
     background-color: rgb(3, 58, 3);
-    /* border: 3px solid rgb(13, 14, 13)(115, 255, 0); */
-    /* border: 1px solid red; */
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
 #project-main-heading{
     display: flex;
     font-size: 50px;
-    /* margin-left: 500px; */
-    /* margin-bottom: 100px; */
     color: aliceblue;
     margin: 0 auto;
     width: 100%;
     height: 60px;
     border: 2px solid red;
-    padding-left: 90px;
-    padding-top: 80px;
+    padding-left: 450px;
+    /* padding-top: 80px; */
     
     
 }
 
 
 #project{
-    width: 50%;
-    /* height: 1200px; */
+    width: 80%;
+    
     height: auto;
-    /* background-color: aquamarine; */
+  
     margin: 0 auto;
     margin-top: 30px;
     display: flex;
@@ -657,12 +651,7 @@ footer h2{
 
 
 
-/* @media only  screen and (max-width:1000px){
-    nav{
-        display: flex;
-        justify-content: space-evenly;
-    }
-}  */
+
 
 
 
@@ -783,18 +772,14 @@ footer h2{
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
-        /* width: 400px; */
+       
         width: 100%;
         height: auto;
         border: 3px solid rgb(255, 251, 0);
 
     }
 
-    /* #h1-head{
-        width: fit-content;
-        height: auto;
-        margin: 0%;
-    } */
+    
     .service-cards{
         display: flex;
         justify-content: space-evenly;
@@ -852,52 +837,71 @@ footer h2{
 
    
 
-    #about-main{
-        
-        height:auto;
-        display: flex;
-        justify-content: space-around;
+    #about-main {
+        width:100%;
+        flex-direction: column;
+        height: auto;
+        border: 3px solid rgb(22, 21, 21);
+    }
+
+   
+
+    .about-content {
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+        border: 3px solid rgb(238, 255, 0);
+    }
+
+    .about-bottom-box {
+        width: 300px;
+        height: 300px;
+        margin: 15px auto;
+        margin-top:150px;
+        /* margin-left: 50px; */
+        padding-left: 50px;
+        border: 3px solid rgb(200, 255, 0);
+    }
+
+    #about-heading {
+        font-size: 30px;
+    }
+
+    #about-small-heading {
+        font-size: 20px;
+    }
+
+    #about-para {
+        font-size: 16px;
+    }
+
+    .about-content button {
+        margin: 10px auto;
+        padding: 0.6rem 2rem;
+    }
+
+    #contact-main{
+        width: 100%;
+        height: auto;
         border: 3px solid red;
-        }
+        display: flex;
+        justify-content: center;
+       align-items: center;
+       flex-direction: column;
 
-        .about-bottom-box{
-            height: auto;
-            position: relative;
-        }
-        .about-pic{
-            width: 90%;
-            height: auto;
-            border: 2px solid red;
+    }
 
-            
-        }
-        .about-content{
-            width: 90%;
-            height: auto;
-            border: 2p solid red;
-        }
-
-        .contact-main-outer{
-            border: 1px solid red;
-            display: flex;
-            justify-content: space-evenly;
-            flex-direction: column;
-        }
-        .contact-main-box{
-            width: 100%;
-            height: auto;
-            border: 1px solid rgb(12, 11, 11);
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-        }
-
-        .contact-small-box{
-            border: 1px solid red;
-            width:250px;
-            height: auto;
-        }
-
-
-
+    .contact-main-box{
+        width: 100%;
+        height: auto;
+        border: 3px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:30px;
+    }
 }
+        
+
+
