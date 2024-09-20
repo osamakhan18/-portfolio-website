@@ -181,9 +181,7 @@ nav{
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
-    /* margin-top: 30px; */
-    margin-bottom: 30px;
-    /* margin-left: 100px; */
+    
     
     
     
@@ -207,9 +205,12 @@ nav{
 }
 .service-heading{
     width: 500px;
-    height: 250px;
+    height: 300px;
     align-items: center;  
     margin: 0 auto;
+   
+    overflow: hidden;
+    padding-left: 30px;
     
 
 }
@@ -249,7 +250,6 @@ nav{
     position: absolute;
     width: 250px;
     height: 200px;
-    
     right: 40%;
     top: 10%;
 }
@@ -270,7 +270,7 @@ nav{
     color: rgb(250, 244, 236); 
     font-size: 20px; 
     text-align: center;
-    /* z-index: 2;  */
+   
 }
 
 
@@ -279,11 +279,12 @@ nav{
     width: 100%;
     height: auto;
     background-color: rgb(3, 58, 3);
-    margin-bottom: 40px;
+   
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 
@@ -294,11 +295,15 @@ nav{
     margin: 0 auto;
     width: 100%;
     height: 60px;
-    border: 2px solid red;
-    padding-left: 450px;
+    
+    /* padding-left: 450px; */
     /* padding-top: 80px; */
     
     
+}
+
+#project-span{
+    color: #eeff02;
 }
 
 
@@ -336,7 +341,7 @@ nav{
     color: #36da15;
 }
 .project-content p{
-    /* margin-top: 50px; */
+    
     margin-left: 60px;
 
 }
@@ -372,6 +377,8 @@ nav{
     display: flex;
     align-items: center;
     color: aliceblue;
+    
+    padding-top: 80px;
    
     
 }
@@ -392,12 +399,10 @@ nav{
 .about-pic{
     width: 300px;
     height: 350px;
-    
     position: absolute;
     bottom: 30px;
     left: 30px;
     overflow: hidden;
-    
     border-radius: 10px;
     box-shadow: 2px 2px 4px  rgb(230, 226, 12);
 
@@ -457,12 +462,13 @@ nav{
     border: 1px solid rgb(3, 58, 3);
     background-color: rgb(3, 58, 3);
     
+    
 
 }
 
 #contact-main {
     width: 100%;
-    height: 600px;
+    height: 500px;
     background-color: rgb(3, 58, 3);
     border: 1px solid rgb(3, 58, 3);
     margin-top: 70px;
@@ -471,7 +477,7 @@ nav{
     align-items: center;
     flex-direction: column;
    
-    
+   
    
 }
 
@@ -479,7 +485,7 @@ nav{
     width: 400px;
     height: 50px;
     display: block;
-    /* margin-left: 500px; */
+ 
     font-size: 50px;
     color: white;
     margin-top: 120px;
@@ -495,26 +501,28 @@ nav{
 
 
 .contact-main-box{
-    /* width: 1300px; */
+  
     width: 100%;
     height: 300px;
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
-    border: 2px solid black;
+   
 }
 
 .contact-small-box{
     width: 350px;
     height: 200px;
     background-color: #136d07;
-    /* margin-top:50px; */
+    
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
     color: white;
     border-radius: 20px;
     box-shadow: 2px 2px 8px rgb(247, 230, 0);
+   
+    margin-top: 50px;
     
 
 }
@@ -522,7 +530,7 @@ nav{
 .contact-pic{
     width: 100px;
     height: 80px;
-    background-color: aquamarine;
+   
     border-radius: 50%;
     margin-top: 40px;
     overflow: hidden;
@@ -536,15 +544,13 @@ nav{
 }
 
 #contact-heading{
-    border: 1px solid red;
-    /* width: fit-content;
-    height: fit-content; */
+
     margin: 0%;
 }
 
 .contact-info{
     width: 230px;
-    /* border: 1px solid red; */
+    
     height: 130px;
     margin-top: 10px;
 }
@@ -564,10 +570,10 @@ footer{
     height: 400px;
     background-color: rgb(3, 59, 9);
     
-    border: 1px solid rgb(2, 54, 7);
-    /* margin: 0% auto; */
+    /* border: 1px solid rgb(2, 54, 7); */
+   
     text-align: center;
-    border: 1px solid red;
+  
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -586,7 +592,7 @@ footer{
 }
 
 footer h2{
-    /* width: 400px; */
+  
     height: 30px;
     margin-left: 30px;
     color: aliceblue;
@@ -594,7 +600,7 @@ footer h2{
 .footer-conatct{
     width: 400px;
     height: 100px;
-    /* margin-left: 500px; */
+  
     margin-top: 100px;
    
 }
@@ -605,7 +611,7 @@ footer h2{
    
     display: flex;
     justify-content: space-around;
-    /* margin-left: 550px; */
+   
     
 }
 
@@ -665,17 +671,17 @@ footer h2{
         
         width: 100%;
         height: auto;
-        border: 5px solid rgb(241, 5, 5);
+        
         overflow: hidden;
         margin: 0 auto;
-        margin-left: 100px;
+        /* margin-left: 100px; */
 
     }
 
     nav{
         display: flex;
         justify-content: space-evenly;
-        /* width: 100%; */
+        
         height: auto;
     }
 
@@ -725,29 +731,34 @@ footer h2{
     .pic{
         width: 200px;
         height: 250px;
-        /* margin-right: 100px; */
+        
         box-shadow: 5px 5px 30px rgb(2, 65, 2);
-        border: 4px solid red;
+       
 
     }
 
     .hero{
         width: 100%;
         height: auto;
-        /* height: auto; */
+        
         display: flex;
         justify-content: space-between;
        margin: 0%;
-        /* margin-right: 50px; */
-        border: 4px solid red;
+       
+        /* border: 4px solid red; */
+        gap: 10px;
     }
     .intro{
-        padding: 0%;
-        margin: 0%;
+        font-size: 30px;
+      
+    }
+
+    .last-name{
+        font-size: 30px;
     }
 
     .hero button{
-        width: 200px;
+        width: 150px;
         height: 50px;
         border: 3px solid rgb(2, 53, 2);
         font-size: 15px;
@@ -758,13 +769,14 @@ footer h2{
        
         
         width: 100%;
-        height: 1000px;
+       height:auto;
         display: flex;
         align-items: center;
         flex-direction: column;
         margin-bottom: 100px;
-        border: 3px solid rgb(179, 248, 51);
-        /* margin-left: 100px; */
+        
+        
+        
 
     }
     .service-heading{
@@ -775,7 +787,7 @@ footer h2{
        
         width: 100%;
         height: auto;
-        border: 3px solid rgb(255, 251, 0);
+       
 
     }
 
@@ -783,20 +795,20 @@ footer h2{
     .service-cards{
         display: flex;
         justify-content: space-evenly;
-        /* flex-direction: column; */
+      
         flex-wrap: wrap;
         align-items: center;
         width: 100%;
         gap: 20px;
-        border: 3px solid rgb(18, 22, 230);
+       
         height: auto;
         margin-bottom: 10px;
     }
     .service-small-card{
-        /* width: 200px; */
+        
         width: 300px;
         height: 350px;
-        border: 1px solid red;
+        border: 2px solid red;
 
 
     }
@@ -804,7 +816,7 @@ footer h2{
     #project-main{
         width:750px;
         height: auto;
-        /* margin-bottom: 50px; */
+       
         border: 4px solid rgb(26, 23, 23);
         display: flex;
         justify-content: space-evenly;
@@ -816,9 +828,7 @@ footer h2{
 
     #project{
             width: 100%;
-      
         height: auto;
-        border: 1px solid red;
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
@@ -827,9 +837,8 @@ footer h2{
 
     #project-main-heading{
         width: 100%;
-        height: 200px;
-       
-        
+        height: 150px;
+    padding-left: 200px;
         margin: 0 auto;
         letter-spacing: 2px;
 
@@ -841,7 +850,7 @@ footer h2{
         width:100%;
         flex-direction: column;
         height: auto;
-        border: 3px solid rgb(22, 21, 21);
+       
     }
 
    
@@ -850,7 +859,7 @@ footer h2{
         width: 100%;
         margin: 10px auto;
         text-align: center;
-        border: 3px solid rgb(238, 255, 0);
+        
     }
 
     .about-bottom-box {
@@ -858,9 +867,8 @@ footer h2{
         height: 300px;
         margin: 15px auto;
         margin-top:150px;
-        /* margin-left: 50px; */
         padding-left: 50px;
-        border: 3px solid rgb(200, 255, 0);
+       
     }
 
     #about-heading {
@@ -883,7 +891,7 @@ footer h2{
     #contact-main{
         width: 100%;
         height: auto;
-        border: 3px solid red;
+       
         display: flex;
         justify-content: center;
        align-items: center;
@@ -894,7 +902,7 @@ footer h2{
     .contact-main-box{
         width: 100%;
         height: auto;
-        border: 3px solid black;
+       
         display: flex;
         justify-content: center;
         align-items: center;
