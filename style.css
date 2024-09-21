@@ -53,6 +53,13 @@ nav{
 nav a{
     text-decoration: none;
     color: antiquewhite;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    color: #136d07;
+    border-bottom: #136d07;
+    text-decoration: underline;
 }
 
 
@@ -89,8 +96,10 @@ nav a{
     display: flex;
     justify-content: space-around;
     margin-left: 70px;
-    
+   
 }
+
+
 
 .intro{
     width: 500px;
@@ -106,7 +115,7 @@ nav a{
     color: antiquewhite;
 }
 
-.intro button{
+#hero-button{
     padding: 1rem 3rem;
     width: 250px;
     font-size: xx-large;
@@ -115,16 +124,29 @@ nav a{
     border: 5px solid rgb(10, 138, 38);
     background-color: rgba(29, 27, 25, 0.9);
     color: antiquewhite;
+    transition: 1s;
+    box-shadow: 0.5px 0.5px 15px  rgb(71, 207, 8);
+    
     
 
 }
+
+
+
+#hero-button:hover{
+    background-color: #36da15;
+    transform: scale(1.1);
+    translate: x;
+
+}
+
 
 .pic{
     width: 300px;
     height: 400px;
     margin-top: 60px;
     border-radius: 40%;
-    box-shadow: 3px 3px 20px 15px green;
+    box-shadow: 3px 3px 50px  rgb(25, 236, 25);
     overflow: hidden;
 }
 
@@ -194,7 +216,11 @@ nav{
     font-size: 60px;
     color: antiquewhite;
     margin-top: 60px;
-    color: white;
+    color: rgb(253, 249, 4);
+    box-shadow: 3px 3px 30px rgb(218, 233, 6);
+    /* border: 2px solid red; */
+    width: fit-content;
+    height: fit-content;
 
 }
 
@@ -208,9 +234,9 @@ nav{
     height: 300px;
     align-items: center;  
     margin: 0 auto;
-   
     overflow: hidden;
     padding-left: 30px;
+    
     
 
 }
@@ -239,7 +265,7 @@ nav{
     border: 3px solid black;
     transition: 2s;
     /* border: 0.5px solid red; */
-    box-shadow: 5px 5px 3px black;
+    box-shadow: 7px 7px 2px rgb(3, 3, 3);
       
     
 
@@ -290,28 +316,33 @@ nav{
 
 #project-main-heading{
     display: flex;
+    justify-content: center;
     font-size: 50px;
     color: aliceblue;
-    margin: 0 auto;
-    width: 100%;
-    height: 60px;
+    /* width: 100%; */
+    width: fit-content;
+    height: auto;
+   
+    box-shadow: 1px 1px 20px white;
+    border: none;
+   
     
-    /* padding-left: 450px; */
-    /* padding-top: 80px; */
+    
     
     
 }
 
 #project-span{
     color: #eeff02;
+    box-shadow: 3px 3px 15px rgb(243, 220, 16);
+    border: none;
+    
 }
 
 
 #project{
     width: 80%;
-    
     height: auto;
-  
     margin: 0 auto;
     margin-top: 30px;
     display: flex;
@@ -325,10 +356,12 @@ nav{
     height: 400px;
     background-color: #030303;
     color: aliceblue;
+    transition: 1s;
     
     
     
 }
+
 
 .project-heading{
     margin-top: 100px;
@@ -339,12 +372,23 @@ nav{
 .project-content h2{
     margin-left: 60px;
     color: #36da15;
+    transition: 1s;
+   
+    
 }
+
+
+
+
+
 .project-content p{
     
     margin-left: 60px;
+   
 
 }
+
+
 
 
 
@@ -354,6 +398,13 @@ nav{
     background-color: #d40442;
     background-image:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('./images/project-3.png');
+    transition: 1s;
+   
+}
+
+.project-pic:hover{
+    transform: scale(1.03);
+    
 }
 
 .project-pic img{
@@ -665,7 +716,11 @@ footer h2{
 @media   (max-width:900px) {
 
     
-    
+    body {
+        border: 2px solid black;
+        background: none;
+        width: 100%;
+    }  
     
     .main{
         
@@ -757,7 +812,7 @@ footer h2{
         font-size: 30px;
     }
 
-    .hero button{
+    #hero-button{
         width: 150px;
         height: 50px;
         border: 3px solid rgb(2, 53, 2);
@@ -814,7 +869,7 @@ footer h2{
     }
 
     #project-main{
-        width:750px;
+        width:100%;
         height: auto;
        
         border: 4px solid rgb(26, 23, 23);
@@ -833,24 +888,31 @@ footer h2{
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
 
     #project-main-heading{
         width: 100%;
         height: 150px;
-    padding-left: 200px;
-        margin: 0 auto;
+   
         letter-spacing: 2px;
 
     }
 
+    .project-content{
+        width: 90%;
+        margin: 0% auto;
+    }
+    .project-pic{
+        width: 90%;
+        object-fit: cover;
+    }
    
 
     #about-main {
         width:100%;
         flex-direction: column;
         height: auto;
-       
     }
 
    
@@ -859,6 +921,7 @@ footer h2{
         width: 100%;
         margin: 10px auto;
         text-align: center;
+        /* border: 1px solid red; */
         
     }
 
