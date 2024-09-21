@@ -492,7 +492,7 @@ nav{
     color: #f1f50b;
 }
 
-.about-content button{
+#resume{
     padding: 1rem 3rem;
     margin-left: 100px;
     margin-top: 50px;
@@ -502,8 +502,16 @@ nav{
     background:none;
     color: aliceblue;
     font-weight: 800;
+    transition: 1s;
     
 }
+
+#resume:hover{
+    background-color: #eeff02;
+    color: #030303;
+}
+
+
 
 
 .contact-main-outer{
@@ -574,8 +582,14 @@ nav{
     box-shadow: 2px 2px 8px rgb(247, 230, 0);
    
     margin-top: 50px;
+
+    transition: 1s;
     
 
+}
+
+.contact-small-box:hover{
+    transform: scale(1.1);
 }
 
 .contact-pic{
@@ -671,11 +685,18 @@ footer h2{
     height: 60px;
     border-radius: 50%;
     overflow: hidden;
+    transition: 1s;
 }
+
+
 
 #lindin img{
     width: 100%;
     height: 100%;
+}
+
+#linkdin img:hover{
+    background-color: #1b44ca;
 }
 
 #youtube{
